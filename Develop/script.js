@@ -20,10 +20,13 @@ function generatePassword() {
   //   alert("Your password needs to be in range of 8 and 128.");
   //   window.location.reload(true);
   // } 
-  if (lengthPrompt  < 8 || lengthPrompt > 128  == false) {
-    (alert("Your password needs to be in range of 8 and 128."))
-    (window.location.reload())
+  if ((lengthPrompt  < 8 || lengthPrompt > 128)  == false) {
+  } else alert("Your password needs to be in range of 8 and 128."); {
+    
+    console.log(lengthPrompt);
+    // generatePassword();
   } 
+  
 
   // let lengthPrompt = prompt("How long do you want you password to be? between 8 and 128 characters.");
   
