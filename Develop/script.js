@@ -14,17 +14,9 @@ function generatePassword() {
   lengthPrompt = Number(lengthPrompt)
   
   // Sets off an alert when the user picks a length outside of the range.
-  // if (lengthPrompt  < 8 || lengthPrompt > 128  == false) {
-  //   // If lengthPrompt = false the script starts over.
-  // } else {
-  //   alert("Your password needs to be in range of 8 and 128.");
-  //   window.location.reload(true);
-  // } 
   if ((lengthPrompt  < 8 || lengthPrompt > 128)  == false) {
   } else alert("Your password needs to be in range of 8 and 128."); {
-    
     console.log(lengthPrompt);
-    // generatePassword();
   } 
   
 
@@ -64,12 +56,12 @@ function generatePassword() {
   console.log(container);
   console.log(typeof container);
   
-  
+  // This ring and alert if all choices are false.
   if ((numCon && lowerCaseCon && upperCaseCon && specialCharCon) == false) {
     alert("You mus select OK for at least one of the following: numbers, lower case, upper case, or special characters.");
     
   }
-  
+  // This is the function that generates the random password.
 for (var i = 0; i < lengthPrompt; i++) {
   var randomNumber = Math.floor(Math.random() * container.length);
   password += container.substring(randomNumber, randomNumber +1);
